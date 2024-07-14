@@ -1,4 +1,4 @@
-**ข้อตกลงในการใช้ซอฟต์แวร์**
+# ข้อตกลงในการใช้ซอฟต์แวร์
 
 ซอฟต์แวร์นี้เป็นผลงานที่พัฒนาขึ้นโดย นายภูมิสิทธิ์ อินสกุล นายชญานนท์ พิษณุวัฒนศักดิ์ และ นายทัศน์พล โล่สุวรรณรักษ์ จากมหาวิทยาลัยเกษตรศาสตร์ วิทยาเขตศรีราชา ภายใต้การดูแลของ นางสาวกาญจนา เอี่ยมสอาด ภายใต้โครงการผู้เจริญผจญภัย (Wealthy's Odyssey) ซึ่งสนับสนุนโดยสำนักงานพัฒนาวิทยาศาสตร์และเทคโนโลยีแห่งชาติ โดยมีวัตถุประสงค์เพื่อส่งเสริมให้นักเรียนและนักศึกษาได้เรียนรู้และฝึกทักษะในการพัฒนาซอฟต์แวร์
 
@@ -6,7 +6,7 @@
 
 ดังนั้น สำนักงานพัฒนาวิทยาศาสตร์และเทคโนโลยีแห่งชาติจึงไม่มีหน้าที่ในการดูแล บำรุงรักษา จัดการอบรมการใช้งาน หรือพัฒนาประสิทธิภาพซอฟต์แวร์ รวมทั้งไม่รับรองความถูกต้องหรือประสิทธิภาพการทำงานของซอฟต์แวร์ ตลอดจนไม่รับประกันความเสียหายต่าง ๆ อันเกิดจากการใช้ซอฟต์แวร์นี้ทั้งสิ้น
 
-**License Agreement**
+# License Agreement
 
 This software is a work developed by Mr. Phumsit Insakul, Mr. Chayanon Pissanuwattanasak, and Mr. Thatsaphon Losuwannarak from Kasetsart University Sriracha Campus under the provision of Miss Kanjana Eiamsaard under Wealthy's Odyssey, which has been supported by the National Science and Technology Development Agency (NSTDA), in order to encourage pupils and students to learn and practice their skills in developing software.
 
