@@ -10,7 +10,6 @@ import { ForgetPasswordScreen } from "../screens/main/ForgetPasswordScreen";
 import { ChangePasswordScreen } from "../screens/main/ChangePasswordScreen";
 import { MoreScreen } from "../screens/main/MoreScreen";
 import {PDPAConsentScreen } from "../screens/main/PDPAConsentScreen"
-
 export const StackNav = ()=>{
   const Stack = createNativeStackNavigator()
 
@@ -79,6 +78,7 @@ export const StackNav = ()=>{
         component={MoreScreen}
         options={{ headerShown: false }}
       />
+      
     </Stack.Navigator>
   )
 }

@@ -1,4 +1,4 @@
-import { View, Text, Image, TouchableOpacity,ScrollView, StyleSheet, Animated} from "react-native";
+import { View, Text, Image, TouchableOpacity,ScrollView, StyleSheet, Animated, Alert} from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { AssetLiabilityDetailScreen } from "./AssetLiabilityDetailScreen";
 import { useDispatch } from "react-redux";
@@ -906,13 +906,19 @@ export const OverviewScreen = ({navigation})=>{
             useNativeDriver: false
         }).start();
     };
-    
     return(
         <SafeAreaView style={{flex:1}}>
             {isLoading ? (<ActivityIndicator size='large' color="#0ABAB5" style={{marginVertical:'60%'}}></ActivityIndicator>) : (<ScrollView style={{flex:1, padding:10}}>
                 <View style={{ borderRadius:16,borderWidth:1,backgroundColor:'#FFFFFA', borderColor:'#A9A9A9', marginBottom:10}}>
                     <View style={{overflow:'hidden',borderColor:'#cfd0cf',marginLeft:10}}>
-                        <Text style={{textAlign:"center",fontSize:25,fontFamily:'ZenOldMincho-Regular',color:"#000000",marginTop:10}}>สุขภาพการเงิน</Text>
+                        <View style={{flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginTop: 10, paddingHorizontal: 10}}>
+                            <Text style={{fontSize: 25, fontFamily: 'ZenOldMincho-Regular', color: "#000000", textAlign: 'center', flex: 1}}>สุขภาพการเงิน</Text>
+                            <TouchableOpacity onPress={()=>{
+                                    navigation.navigate('InformationScreen')
+                                }}>
+                                <Image source={require('../../assets/info-button.png')} style={{width: 30, height: 30}} />
+                            </TouchableOpacity>
+                        </View> 
                         <View style={{flexDirection:'row'}}>
                             <View style={{flex:1,flexDirection:'column',borderRightWidth:1,borderColor:"#D2DBD6",marginVertical:5}}>
                                 <Text style={{fontFamily:'ZenOldMincho-Regular',fontSize:14,textAlign:'center'}}></Text>
