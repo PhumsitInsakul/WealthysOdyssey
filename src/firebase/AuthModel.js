@@ -4,28 +4,26 @@ import {addUser, addFinancials, addPetsQuest} from './UserModel';
 import { Alert } from 'react-native';
 
 
-export const signUpEmailPass = (profile, success, unsuccess)=>{
-    const currentDate = new Date();
+export const signUpEmailPass = (profile, consent, success, unsuccess) => {
+  const currentDate = new Date();
+  const year = currentDate.getFullYear();
+  const month = String(currentDate.getMonth() + 1).padStart(2, '0');
+  const day = String(currentDate.getDate()).padStart(2, '0');
+  const formattedDate = `${year}-${month}-${day}`;
 
-    const year = currentDate.getFullYear();
-    const month = String(currentDate.getMonth() + 1).padStart(2, '0'); // เพิ่ม 1 เพราะเดือนใน JavaScript เริ่มนับที่ 0
-    const day = String(currentDate.getDate()).padStart(2, '0');
-
-    const formattedDate = `${year}-${month}-${day}`;
-
-    console.log(`email: ${profile.email}`)
-    auth().createUserWithEmailAndPassword(profile.email, profile.password)
-    .then((userCredential)=>{
-      const user = userCredential.user
+  console.log(`email: ${profile.email}`)
+  auth().createUserWithEmailAndPassword(profile.email, profile.password)
+  .then((userCredential) => {
+      const user = userCredential.user;
       console.log(`User: in signUpEmailPass: ${user}`)
-      addUser(user, profile, success, unsuccess)
-      addFinancials(user,formattedDate)
+      addUser(user, profile, consent, success, unsuccess)
+      addFinancials(user, formattedDate)
       addPetsQuest(user)
-    })
-    .catch((error)=>{
+  })
+  .catch((error) => {
       const msg = (`signUpEmailPass error: ${error}`)
       unsuccess(msg)
-    })
+  })
 }
 
 export const signInEmailPass = (email, password, success,unsuccess) => {

@@ -9,8 +9,14 @@ import { setIsUpdateItemPet, setPressInventory } from '../redux/variableSlice';
 
 
 
-export const addUser = (user, profile, success, unsuccess)=>{
+export const addUser = (user, profile, consent, success, unsuccess)=>{
     console.log(`addUser in UserModel user id: ${user.uid}`)
+
+    const currentDate = new Date();
+    const year = currentDate.getFullYear();
+    const month = String(currentDate.getMonth() + 1).padStart(2, '0');
+    const day = String(currentDate.getDate()).padStart(2, '0');
+    const formattedDate = `${year}-${month}-${day}`;
 
     categories = [
         {
@@ -420,16 +426,19 @@ export const addUser = (user, profile, success, unsuccess)=>{
     .set({
             email: user.email,
             phoneNumber: profile.phoneNumber,
-            categories: categories
+            categories: categories,
+            consent: {
+                pdpaConsent: consent.pdpaConsent, 
+                consentDate: formattedDate
+            }
         },
     )
     .then(()=>{
         success(user)
     })
     .catch((error)=>{
-      console.error(`addUser in users collection error: ${error}`)
-      console.error(msg)
-      unsuccess(msg)
+        console.error(`addUser in users collection error: ${error}`);
+        unsuccess(error.message);
     })
 }
 

@@ -36,7 +36,7 @@ export const SelectSignInSignUpScreen = ({ navigation })=>{
                         <Shadow  distance={5} startColor={'#80808070'} offset={[2, 4]}>
                             <TouchableOpacity style={{flex:1, justifyContent:'center', backgroundColor:'#000000', borderRadius:8, paddingHorizontal:'8%'}}
                                 onPress={()=>{
-                                    navigation.navigate('SignUpScreen')
+                                    navigation.navigate('PDPAConsentScreen')
                                 }}
                             >
                                     <Text style={{color:'#ffffff', fontWeight:'bold', fontSize:20}}>SIGN UP</Text>

@@ -980,7 +980,7 @@ export const OverviewScreen = ({navigation})=>{
                                 marginVertical:10
                             }}
                         >
-                            <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                            <TouchableOpacity onPress={handlePress1} style={{ flexDirection: 'row', alignItems: 'center' }}>
                                 <Text
                                     style={{
                                         flex: 1,
@@ -1002,10 +1002,10 @@ export const OverviewScreen = ({navigation})=>{
                                 >
                                     <Text style={{ fontSize: 15, color: '#176B87' }}>{progressCircle1}%</Text>
                                 </ProgressCircle>
-                                <TouchableOpacity onPress={handlePress1}>
+                                <View>
                                     <Image style={{ marginLeft: 20 }} source={require('../../assets/VectorGray.png')} width={30} height={30} />
-                                </TouchableOpacity>
-                            </View>
+                                </View>
+                            </TouchableOpacity>
                             
                         </View>
                         {expanded1 && (
@@ -1106,7 +1106,7 @@ export const OverviewScreen = ({navigation})=>{
                                     marginVertical:10
                                 }}
                             >
-                                <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                                <TouchableOpacity onPress={handlePress2} style={{ flexDirection: 'row', alignItems: 'center' }}>
                                     <Text
                                         style={{
                                             flex: 1,
@@ -1128,10 +1128,10 @@ export const OverviewScreen = ({navigation})=>{
                                     >
                                         <Text style={{ fontSize: 15, color: '#176B87' }}>{progressCircle2}%</Text>
                                     </ProgressCircle>
-                                    <TouchableOpacity onPress={handlePress2}>
+                                    <View>
                                         <Image style={{ marginLeft: 20 }} source={require('../../assets/VectorGray.png')} width={30} height={30} />
-                                    </TouchableOpacity>
-                                </View>
+                                    </View>
+                                </TouchableOpacity>
                                 
                                 
 
@@ -1209,7 +1209,7 @@ export const OverviewScreen = ({navigation})=>{
                                     marginVertical:10
                                 }}
                             >
-                                <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                                <TouchableOpacity onPress={handlePress3} style={{ flexDirection: 'row', alignItems: 'center' }}>
                                     <Text
                                         style={{
                                             flex: 1,
@@ -1231,10 +1231,10 @@ export const OverviewScreen = ({navigation})=>{
                                     >
                                         <Text style={{ fontSize: 15, color: '#176B87' }}>{progressCircle3}%</Text>
                                     </ProgressCircle>
-                                    <TouchableOpacity onPress={handlePress3}>
+                                    <View>
                                         <Image style={{ marginLeft: 20 }} source={require('../../assets/VectorGray.png')} width={30} height={30} />
-                                    </TouchableOpacity>
-                                </View>
+                                    </View>
+                                </TouchableOpacity>
                                 
                                 
 
@@ -1310,7 +1310,7 @@ export const OverviewScreen = ({navigation})=>{
                                     marginVertical:10
                                 }}
                             >
-                                <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                                <TouchableOpacity onPress={handlePress4} style={{ flexDirection: 'row', alignItems: 'center' }}>
                                     <Text
                                         style={{
                                             flex: 1,
@@ -1332,10 +1332,10 @@ export const OverviewScreen = ({navigation})=>{
                                     >
                                         <Text style={{ fontSize: 15, color: '#176B87' }}>{progressCircle4}%</Text>
                                     </ProgressCircle>
-                                    <TouchableOpacity onPress={handlePress4}>
+                                    <View>
                                         <Image style={{ marginLeft: 20 }} source={require('../../assets/VectorGray.png')} width={30} height={30} />
-                                    </TouchableOpacity>
-                                </View>
+                                    </View>
+                                </TouchableOpacity>
                                 
                                 
 
@@ -1385,7 +1385,7 @@ export const OverviewScreen = ({navigation})=>{
                                     marginVertical:10
                                 }}
                             >
-                                <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                                <TouchableOpacity onPress={handlePress5} style={{ flexDirection: 'row', alignItems: 'center' }}>
                                     <Text
                                         style={{
                                             flex: 1,
@@ -1407,10 +1407,10 @@ export const OverviewScreen = ({navigation})=>{
                                     >
                                         <Text style={{ fontSize: 15, color: '#176B87' }}>{progressCircle5}%</Text>
                                     </ProgressCircle>
-                                    <TouchableOpacity onPress={handlePress5}>
+                                    <View>
                                         <Image style={{ marginLeft: 20 }} source={require('../../assets/VectorGray.png')} width={30} height={30} />
-                                    </TouchableOpacity>
-                                </View>
+                                    </View>
+                                </TouchableOpacity>
                                 
                                 
 
